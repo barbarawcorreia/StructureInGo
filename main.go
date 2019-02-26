@@ -19,6 +19,7 @@ func vagoesLifo(valoresEntrada []int) []int {
 	return valoresSaida
 }
 
+// FIFO - FIRST IN FIRST OUT
 func vagoesFifo(valoresEntrada []int) []int {
 	valoresSaida := []int{}
 
