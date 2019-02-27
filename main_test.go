@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestVagoesEntrada1(t *testing.T) {
+x	func TestVagoesEntrada1(t *testing.T) {
 	// Premissa de que foi dada a quantidade '5' de vagões.
 	// qtDeVagoes := 5
 
@@ -35,13 +35,14 @@ func TestVagoesEntrada2(t *testing.T) {
 }
 
 // Qual estratégia usar (?)
-// Mistura de fifo c/ lifo ?
 // é obrigado a passar pela estação (?)
+
+// Tentativa de usar FIFO com pulinhos
 func TestVagoesEntrada3(t *testing.T) {
 
 	valorEntradaConstante := []int{1, 2, 3, 4, 5, 6}
 	valorDaSaídaEsperado := []int{1, 3, 2, 5, 4, 6}
-	// Utilizando a estratégia fifo - last in first out
+	// Utilizando a estratégia fifo - first in first out
 	// resposta esperada - yes
 	retornoFIFO := vagoesFifo(valorEntradaConstante)
 
